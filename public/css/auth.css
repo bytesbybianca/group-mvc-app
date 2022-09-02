@@ -55,6 +55,7 @@ input{
 	padding: 10px;
 	border: none;
 	outline: none;
+    transition: .2s ease-in;
 	border-radius: 5px;
 }
 input[type=submit]{
@@ -73,8 +74,12 @@ input[type=submit]{
 	border-radius: 5px;
 	cursor: pointer;
 }
-button:hover{
+input[type=submit]:hover{
 	background: #6291fd;
+}
+a:hover{
+    transition: .2s ease-in;
+	color: #6291fd;
 }
 .login{
 	height: 460px;
@@ -86,4 +91,6 @@ button:hover{
 	color: #1a2131;
 	transform: scale(.6);
 }
-
+.landingButton{
+    color: #fff;
+}
