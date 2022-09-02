@@ -13,7 +13,11 @@
     <% todos.forEach( el => { %>
             <li class='todoItem' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
-                <span> <%= el.dateAdded.toLocaleDateString('en-uk', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) %> </span>
+                <span> <%= el.dateAdded.toLocaleTimeString('en-uk', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) %> </span>
+                <% if (el.completed) { %>
+                    <span><%= el.dateCompleted.toLocaleTimeString('en-uk', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) %></span>
+                <% } %>
+               <!-- <span> <%= el.dateCompleted.toLocaleTimeString('en-uk', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) %> </span> -->
                 <span class='del'> Delete </span>
             </li>
     <% }) %>    
