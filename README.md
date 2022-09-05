@@ -1,14 +1,14 @@
 # To-Do List Application
 
-Full-stack To-Do List application with MVC arcitechture and authentication.
+Full-stack To-Do List application with MVC architechture and authentication.
 
 ---
 
 # Features
 
 - Personal account using passport authentication.
-- Task priority asignments.
-- The current status of tasks, 'complete' or 'imcomplete'.
+- Task priority assignments.
+- The current status of tasks, 'complete' or 'incomplete'.
 - Record of the date each task was added to the list.
 - The date a task was completed.
 - Delete option if a tasks is no longer needed.
