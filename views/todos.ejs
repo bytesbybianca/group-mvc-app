@@ -142,9 +142,9 @@
         <div class="todo-cell status-cell" data-id='<%=el._id%>'>
           <span class="cell-label">Status:</span>
           <% if (el.completed === true) { %>
-          <span class="status active completed">Completed</span>
+          <span class="action-button status active completed">Completed</span>
           <% } else { %>
-          <span class="status disabled not">Incomplete</span>
+          <span class="action-button status disabled not">Incomplete</span>
           <% } %>
         </div>
         <div class="todo-cell sales"><span class="cell-label">Date Added:</span><%= el.dateAdded.toLocaleDateString('en-uk', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) %></div>
